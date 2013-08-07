@@ -8,6 +8,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import "PERootViewController.h"
+#import "FUIButton.h"
 #import "UIColor+FlatUI.h"
 
 @interface PERootViewController ()
@@ -68,53 +69,58 @@
 
     // Account Manager Excuse Label
     
-    UILabel *accountManagerExcuseLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, screenHeight / 2 - 30, excuseLabelWidth, excuseLabelHeight)];
-    [accountManagerExcuseLabel.layer setCornerRadius:8];
-    [accountManagerExcuseLabel setText:@"Manager"];
-    [accountManagerExcuseLabel setTextColor:[UIColor cloudsColor]];
-    [accountManagerExcuseLabel setTextAlignment:NSTextAlignmentCenter];
-    [accountManagerExcuseLabel setBackgroundColor:[UIColor greenSeaColor]];
-    [accountManagerExcuseLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:25]];
-    
+    FUIButton *accountManagerExcuseButton = [[FUIButton alloc] initWithFrame:CGRectMake(50, screenHeight / 2 - 30, excuseLabelWidth, excuseLabelHeight)];
+    [accountManagerExcuseButton setShadowHeight:3.0f];
+    [accountManagerExcuseButton setCornerRadius:6.0f];
+    [accountManagerExcuseButton setButtonColor:[UIColor turquoiseColor]];
+    [accountManagerExcuseButton setShadowColor:[UIColor greenSeaColor]];
+    [accountManagerExcuseButton setTitle:@"Manager" forState:UIControlStateNormal];
+    [accountManagerExcuseButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [accountManagerExcuseButton.titleLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:25]];
 
     // Designer Excuse Label
 
-    UILabel *designerExcuseLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, screenHeight / 2 - 30 + excuseLabelHeight + excuseLabelSpacing, excuseLabelWidth, excuseLabelHeight)];
-    [designerExcuseLabel.layer setCornerRadius:8];
-    [designerExcuseLabel setText:@"Designer"];
-    [designerExcuseLabel setTextColor:[UIColor cloudsColor]];
-    [designerExcuseLabel setTextAlignment:NSTextAlignmentCenter];
-    [designerExcuseLabel setBackgroundColor:[UIColor greenSeaColor]];
-    [designerExcuseLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:25]];
+    FUIButton *designerExcuseButton = [[FUIButton alloc] initWithFrame:CGRectMake(50, screenHeight / 2 - 30 + excuseLabelHeight + excuseLabelSpacing, excuseLabelWidth, excuseLabelHeight)];
+    [designerExcuseButton setShadowHeight:3.0f];
+    [designerExcuseButton setCornerRadius:6.0f];
+    [designerExcuseButton setButtonColor:[UIColor turquoiseColor]];
+    [designerExcuseButton setShadowColor:[UIColor greenSeaColor]];
+    [designerExcuseButton setTitle:@"Designer" forState:UIControlStateNormal];
+    [designerExcuseButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [designerExcuseButton.titleLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:25]];
 
     // Developer Excuse Label
 
-    UILabel *developerExcuseLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, screenHeight / 2 - 30 + (excuseLabelHeight * 2) + (excuseLabelSpacing * 2), excuseLabelWidth, excuseLabelHeight)];
-    [developerExcuseLabel.layer setCornerRadius:8];
-    [developerExcuseLabel setText:@"Developer"];
-    [developerExcuseLabel setTextColor:[UIColor cloudsColor]];
-    [developerExcuseLabel setTextAlignment:NSTextAlignmentCenter];
-    [developerExcuseLabel setBackgroundColor:[UIColor greenSeaColor]];
-    [developerExcuseLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:25]];
+    FUIButton *developerExcuseButton = [[FUIButton alloc] initWithFrame:CGRectMake(50, screenHeight / 2 - 30 + (excuseLabelHeight * 2) + (excuseLabelSpacing * 2), excuseLabelWidth, excuseLabelHeight)];
+    [developerExcuseButton setShadowHeight:3.0f];
+    [developerExcuseButton setCornerRadius:6.0f];
+    [developerExcuseButton setButtonColor:[UIColor turquoiseColor]];
+    [developerExcuseButton setShadowColor:[UIColor greenSeaColor]];
+    [developerExcuseButton setTitle:@"Developer" forState:UIControlStateNormal];
+    [developerExcuseButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [developerExcuseButton.titleLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:25]];
+    
 
     // Starred Excuse Label
 
-    UILabel *starredExcuseLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, screenHeight / 2 - 30 + (excuseLabelHeight * 3) + (excuseLabelSpacing * 3), excuseLabelWidth, excuseLabelHeight)];
-    [starredExcuseLabel.layer setCornerRadius:8];
-    [starredExcuseLabel setText:@"Starred"];
-    [starredExcuseLabel setTextColor:[UIColor cloudsColor]];
-    [starredExcuseLabel setTextAlignment:NSTextAlignmentCenter];
-    [starredExcuseLabel setBackgroundColor:[UIColor colorWithRed:0.922 green:0.133 blue:0.337 alpha:1]];
-    [starredExcuseLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:27]];
+    FUIButton *starredExcuseButton = [[FUIButton alloc] initWithFrame:CGRectMake(50, screenHeight / 2 - 30 + (excuseLabelHeight * 3) + (excuseLabelSpacing * 3), excuseLabelWidth, excuseLabelHeight)];
+    [starredExcuseButton setShadowHeight:3.0f];
+    [starredExcuseButton setCornerRadius:6.0f];
+    [starredExcuseButton setButtonColor:[UIColor colorWithRed:0.922 green:0.133 blue:0.337 alpha:1]];
+    [starredExcuseButton setShadowColor:[UIColor colorWithRed:0.710 green:0.314 blue:0.416 alpha:1]];
+    [starredExcuseButton setTitle:@"<3" forState:UIControlStateNormal];
+    [starredExcuseButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [starredExcuseButton.titleLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:25]];
     
     // Add Subviews to Main View
     
     [self.view addSubview:titleLabel];
     [self.view addSubview:subtitleLabel];
-    [self.view addSubview:designerExcuseLabel];
-    [self.view addSubview:developerExcuseLabel];
-    [self.view addSubview:accountManagerExcuseLabel];
-    [self.view addSubview:starredExcuseLabel];
+    [self.view addSubview:designerExcuseButton];
+    [self.view addSubview:developerExcuseButton];
+    [self.view addSubview:accountManagerExcuseButton];
+    [self.view addSubview:starredExcuseButton];
+
 }
 
 - (void)didReceiveMemoryWarning
