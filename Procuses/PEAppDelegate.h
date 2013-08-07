@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class PERootViewController;
+
 @interface PEAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) PERootViewController *viewController;
+
 
 @end
