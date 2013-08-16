@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E10E36017B224E200FAA086 /* Entypo-Social.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E10E35E17B224E200FAA086 /* Entypo-Social.ttf */; };
+		4E10E36117B224E200FAA086 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E10E35F17B224E200FAA086 /* Entypo.ttf */; };
 		4E20500D17AEC877008C1E26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E20500C17AEC877008C1E26 /* UIKit.framework */; };
 		4E20500F17AEC877008C1E26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E20500E17AEC877008C1E26 /* Foundation.framework */; };
 		4E20501117AEC877008C1E26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E20501017AEC877008C1E26 /* CoreGraphics.framework */; };
@@ -37,9 +39,25 @@
 		4E20506D17AEEB96008C1E26 /* UIToolbar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E20505B17AEEB96008C1E26 /* UIToolbar+FlatUI.m */; };
 		4E20506F17AEEDC3008C1E26 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E20506E17AEEDC3008C1E26 /* CoreText.framework */; };
 		4E20507117AFEA6A008C1E26 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E20507017AFEA6A008C1E26 /* QuartzCore.framework */; };
+		4E26FAAA17BBCD7D00CF2965 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FAA917BBCD7D00CF2965 /* Parse.framework */; };
+		4E26FACE17BC075E00CF2965 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FAC617BC075E00CF2965 /* AudioToolbox.framework */; };
+		4E26FACF17BC075E00CF2965 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FAC717BC075E00CF2965 /* CFNetwork.framework */; };
+		4E26FAD017BC075E00CF2965 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FAC817BC075E00CF2965 /* CoreLocation.framework */; };
+		4E26FAD117BC075E00CF2965 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FAC917BC075E00CF2965 /* libz.1.1.3.dylib */; };
+		4E26FAD217BC075E00CF2965 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FACA17BC075E00CF2965 /* MobileCoreServices.framework */; };
+		4E26FAD317BC075E00CF2965 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FACB17BC075E00CF2965 /* Security.framework */; };
+		4E26FAD417BC075E00CF2965 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FACC17BC075E00CF2965 /* StoreKit.framework */; };
+		4E26FAD517BC075E00CF2965 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FACD17BC075E00CF2965 /* SystemConfiguration.framework */; };
+		4E26FAE217BC0F3400CF2965 /* BaseExcuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26FAE117BC0F3400CF2965 /* BaseExcuseViewController.m */; };
+		4E26FAE717BC0F6E00CF2965 /* PEExcuseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26FAE417BC0F6E00CF2965 /* PEExcuseLabel.m */; };
+		4E26FAE817BC0F6E00CF2965 /* PELikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E26FAE617BC0F6E00CF2965 /* PELikeButton.m */; };
+		4E26FAEA17BC1A1A00CF2965 /* DesignerExcuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E26FAE917BC1A1A00CF2965 /* DesignerExcuses.plist */; };
+		4E26FAF017BC4E4500CF2965 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E26FAEF17BC4E4500CF2965 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E10E35E17B224E200FAA086 /* Entypo-Social.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Entypo-Social.ttf"; path = "../Entypo-Social.ttf"; sourceTree = "<group>"; };
+		4E10E35F17B224E200FAA086 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = ../Entypo.ttf; sourceTree = "<group>"; };
 		4E20500917AEC877008C1E26 /* Procuses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Procuses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E20500C17AEC877008C1E26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4E20500E17AEC877008C1E26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +112,23 @@
 		4E20505B17AEEB96008C1E26 /* UIToolbar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+FlatUI.m"; sourceTree = "<group>"; };
 		4E20506E17AEEDC3008C1E26 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		4E20507017AFEA6A008C1E26 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4E26FAA917BBCD7D00CF2965 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		4E26FAC617BC075E00CF2965 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4E26FAC717BC075E00CF2965 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4E26FAC817BC075E00CF2965 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4E26FAC917BC075E00CF2965 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		4E26FACA17BC075E00CF2965 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4E26FACB17BC075E00CF2965 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4E26FACC17BC075E00CF2965 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4E26FACD17BC075E00CF2965 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4E26FAE017BC0F3400CF2965 /* BaseExcuseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseExcuseViewController.h; sourceTree = "<group>"; };
+		4E26FAE117BC0F3400CF2965 /* BaseExcuseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseExcuseViewController.m; sourceTree = "<group>"; };
+		4E26FAE317BC0F6E00CF2965 /* PEExcuseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PEExcuseLabel.h; path = ../PEExcuseLabel.h; sourceTree = "<group>"; };
+		4E26FAE417BC0F6E00CF2965 /* PEExcuseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PEExcuseLabel.m; path = ../PEExcuseLabel.m; sourceTree = "<group>"; };
+		4E26FAE517BC0F6E00CF2965 /* PELikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PELikeButton.h; path = ../PELikeButton.h; sourceTree = "<group>"; };
+		4E26FAE617BC0F6E00CF2965 /* PELikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PELikeButton.m; path = ../PELikeButton.m; sourceTree = "<group>"; };
+		4E26FAE917BC1A1A00CF2965 /* DesignerExcuses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DesignerExcuses.plist; sourceTree = "<group>"; };
+		4E26FAEF17BC4E4500CF2965 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,17 +136,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E26FACE17BC075E00CF2965 /* AudioToolbox.framework in Frameworks */,
+				4E26FACF17BC075E00CF2965 /* CFNetwork.framework in Frameworks */,
+				4E26FAD017BC075E00CF2965 /* CoreLocation.framework in Frameworks */,
+				4E26FAD117BC075E00CF2965 /* libz.1.1.3.dylib in Frameworks */,
+				4E26FAD217BC075E00CF2965 /* MobileCoreServices.framework in Frameworks */,
+				4E26FAD317BC075E00CF2965 /* Security.framework in Frameworks */,
+				4E26FAD417BC075E00CF2965 /* StoreKit.framework in Frameworks */,
+				4E26FAD517BC075E00CF2965 /* SystemConfiguration.framework in Frameworks */,
+				4E20501117AEC877008C1E26 /* CoreGraphics.framework in Frameworks */,
 				4E20507117AFEA6A008C1E26 /* QuartzCore.framework in Frameworks */,
 				4E20506F17AEEDC3008C1E26 /* CoreText.framework in Frameworks */,
 				4E20500D17AEC877008C1E26 /* UIKit.framework in Frameworks */,
 				4E20500F17AEC877008C1E26 /* Foundation.framework in Frameworks */,
-				4E20501117AEC877008C1E26 /* CoreGraphics.framework in Frameworks */,
+				4E26FAAA17BBCD7D00CF2965 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E10E35B17B220CE00FAA086 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4E10E35E17B224E200FAA086 /* Entypo-Social.ttf */,
+				4E10E35F17B224E200FAA086 /* Entypo.ttf */,
+			);
+			name = Fonts;
+			path = ios;
+			sourceTree = "<group>";
+		};
 		4E20500017AEC877008C1E26 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +173,7 @@
 				4E20500B17AEC877008C1E26 /* Frameworks */,
 				4E20500A17AEC877008C1E26 /* Products */,
 				4E20503617AEEB96008C1E26 /* FlatUIKit */,
+				4E10E35B17B220CE00FAA086 /* Fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +188,15 @@
 		4E20500B17AEC877008C1E26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E26FAC617BC075E00CF2965 /* AudioToolbox.framework */,
+				4E26FAC717BC075E00CF2965 /* CFNetwork.framework */,
+				4E26FAC817BC075E00CF2965 /* CoreLocation.framework */,
+				4E26FAC917BC075E00CF2965 /* libz.1.1.3.dylib */,
+				4E26FACA17BC075E00CF2965 /* MobileCoreServices.framework */,
+				4E26FACB17BC075E00CF2965 /* Security.framework */,
+				4E26FACC17BC075E00CF2965 /* StoreKit.framework */,
+				4E26FACD17BC075E00CF2965 /* SystemConfiguration.framework */,
+				4E26FAA917BBCD7D00CF2965 /* Parse.framework */,
 				4E20507017AFEA6A008C1E26 /* QuartzCore.framework */,
 				4E20506E17AEEDC3008C1E26 /* CoreText.framework */,
 				4E20500C17AEC877008C1E26 /* UIKit.framework */,
@@ -149,6 +213,12 @@
 				4E20501C17AEC877008C1E26 /* PEAppDelegate.m */,
 				4E20502C17AED253008C1E26 /* PERootViewController.h */,
 				4E20502D17AED253008C1E26 /* PERootViewController.m */,
+				4E26FAE017BC0F3400CF2965 /* BaseExcuseViewController.h */,
+				4E26FAE117BC0F3400CF2965 /* BaseExcuseViewController.m */,
+				4E26FAE317BC0F6E00CF2965 /* PEExcuseLabel.h */,
+				4E26FAE417BC0F6E00CF2965 /* PEExcuseLabel.m */,
+				4E26FAE517BC0F6E00CF2965 /* PELikeButton.h */,
+				4E26FAE617BC0F6E00CF2965 /* PELikeButton.m */,
 				4E20501317AEC877008C1E26 /* Supporting Files */,
 			);
 			path = Procuses;
@@ -157,6 +227,8 @@
 		4E20501317AEC877008C1E26 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E26FAE917BC1A1A00CF2965 /* DesignerExcuses.plist */,
+				4E26FAEF17BC4E4500CF2965 /* Images.xcassets */,
 				4E20501417AEC877008C1E26 /* Procuses-Info.plist */,
 				4E20501517AEC877008C1E26 /* InfoPlist.strings */,
 				4E20501817AEC877008C1E26 /* main.m */,
@@ -265,10 +337,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E26FAF017BC4E4500CF2965 /* Images.xcassets in Resources */,
+				4E26FAEA17BC1A1A00CF2965 /* DesignerExcuses.plist in Resources */,
 				4E20501717AEC877008C1E26 /* InfoPlist.strings in Resources */,
 				4E20501F17AEC877008C1E26 /* Default.png in Resources */,
 				4E20502117AEC877008C1E26 /* Default@2x.png in Resources */,
 				4E20502317AEC877008C1E26 /* Default-568h@2x.png in Resources */,
+				4E10E36017B224E200FAA086 /* Entypo-Social.ttf in Resources */,
+				4E10E36117B224E200FAA086 /* Entypo.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E20501917AEC877008C1E26 /* main.m in Sources */,
+				4E26FAE217BC0F3400CF2965 /* BaseExcuseViewController.m in Sources */,
 				4E20501D17AEC877008C1E26 /* PEAppDelegate.m in Sources */,
 				4E20502E17AED253008C1E26 /* PERootViewController.m in Sources */,
 				4E20505C17AEEB96008C1E26 /* FUIAlertView.m in Sources */,
@@ -293,7 +370,9 @@
 				4E20506417AEEB96008C1E26 /* UIFont+FlatUI.m in Sources */,
 				4E20506517AEEB96008C1E26 /* UIImage+FlatUI.m in Sources */,
 				4E20506617AEEB96008C1E26 /* UINavigationBar+FlatUI.m in Sources */,
+				4E26FAE817BC0F6E00CF2965 /* PELikeButton.m in Sources */,
 				4E20506717AEEB96008C1E26 /* UIPopoverController+FlatUI.m in Sources */,
+				4E26FAE717BC0F6E00CF2965 /* PEExcuseLabel.m in Sources */,
 				4E20506817AEEB96008C1E26 /* UIProgressView+FlatUI.m in Sources */,
 				4E20506917AEEB96008C1E26 /* UISlider+FlatUI.m in Sources */,
 				4E20506A17AEEB96008C1E26 /* UIStepper+FlatUI.m in Sources */,
@@ -376,6 +455,12 @@
 		4E20502717AEC877008C1E26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tosin/Documents/iOS\\ Dev/Procuses",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Procuses/Procuses-Prefix.pch";
 				INFOPLIST_FILE = "Procuses/Procuses-Info.plist";
@@ -387,6 +472,12 @@
 		4E20502817AEC877008C1E26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tosin/Documents/iOS\\ Dev/Procuses",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Procuses/Procuses-Prefix.pch";
 				INFOPLIST_FILE = "Procuses/Procuses-Info.plist";

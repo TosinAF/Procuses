@@ -15,5 +15,8 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) PERootViewController *viewController;
 
+@property (nonatomic, retain) NSMutableArray *designerExcuses;
+@property (nonatomic, retain) NSMutableArray *developerExcuses;
+@property (nonatomic, retain) NSMutableArray *accountManagerExcuses;
 
 @end

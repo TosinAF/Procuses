@@ -6,10 +6,12 @@
 //  Copyright (c) 2013 Tosin Afolabi. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import "PEAppDelegate.h"
 #import "PERootViewController.h"
-#import "UINavigationBar+FlatUI.h"
-#import "UIColor+FlatUI.h"
+
+#define ParseAppID @"xed9cfbQReafyFZb37jyUyuZNZ4scm5OxgH135zZ"
+#define ParseClientKey @"a4OQfAJ6L8CKfVV5yc9jB7VrxspzG9yjAFfXXhwY"
 
 @implementation PEAppDelegate
 
@@ -18,38 +20,48 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.viewController = [[PERootViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
-    // Make Nav Bar Flat
-    [navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor colorWithRed:0.973 green:0.973 blue:0.973 alpha:1]];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+
+    [Parse setApplicationId:ParseAppID clientKey:ParseClientKey];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    [self getExcusesFromParse];
+
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
+- (void)getExcusesFromParse
 {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    PFQuery *query = [PFQuery queryWithClassName:@"Excuses"];
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // Results were successfully found, looking first on the network and then on disk.
+            NSArray *excusesArray = objects;
+            self.designerExcuses = [[NSMutableArray alloc] init];
+            self.developerExcuses = [[NSMutableArray alloc] init];
+            self.accountManagerExcuses = [[NSMutableArray alloc] init];
+
+            for (PFObject *excuse in excusesArray) {
+                if ([excuse[@"excuseType"] isEqualToString:@"Designer"]) {
+                    [self.designerExcuses addObject:excuse];
+                } else if ([excuse[@"excuseType"] isEqualToString:@"Developer"]) {
+                    [self.developerExcuses addObject:excuse];
+                } else if ([excuse[@"excuseType"] isEqualToString:@"AccountManager"]) {
+                    [self.accountManagerExcuses addObject:excuse];
+                }
+            }
+
+        } else {
+            
+            // The network was inaccessible and we have no cached data for this query.
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Network Connection" message:@"A network connection is required to download the excuses" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [alert show];
+        }
+    }];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
 
 @end

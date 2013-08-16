@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>excuse</key>
+		<string>That won&apos;t fit the grid.</string>
+		<key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>That&apos;s not in the wireframes.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>That&apos;s a developer thing.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>I didn&apos;t mock it up that way.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>The developer must have changed it.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>Did you try hitting refresh?</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>No one uses IE anyway.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>That&apos;s not how I designed it.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>That&apos;s way too skeuomorphic.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>That&apos;s way too flat.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>Just put a long shadow on it.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>Josef Müller-Brockmann.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>That must be a server thing.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>It only looks bad if it&apos;s not on Retina.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>Are you looking at it in IE or something?</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>That&apos;s not a recognised design pattern.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>It wasn&apos;t designed for that kind of content.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>The users will never notice that.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>The users might not notice it, but they&apos;ll feel it.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>These brand guidelines are shit.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>You wouldn&apos;t get it, it&apos;s a design thing.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>Jony wouldn&apos;t do it like this.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>That&apos;s a dark pattern.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>I don&apos;t think that&apos;s very user friendly.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>excuse</key>
+		<string>I didn&apos;t get a change request for that.</string>
+        <key>favourite</key>
+		<false/>
+	</dict>
+</array>
+</plist>
