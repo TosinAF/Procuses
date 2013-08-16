@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Tosin Afolabi. All rights reserved.
 //
 
-#import <Parse/Parse.h>
 #import "PEAppDelegate.h"
 #import "PELikeButton.h"
 #import "PEExcuseLabel.h"
