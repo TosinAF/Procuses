@@ -1,6 +1,6 @@
 //
-//  DEViewController.h
-//  DesignerExcuses
+//  BaseExcuseViewController.h
+//  Procuses
 //
 //  Created by Tosin Afolabi on 03/08/2013.
 //  Copyright (c) 2013 Tosin Afolabi. All rights reserved.
@@ -19,7 +19,5 @@ typedef NS_ENUM(NSInteger, PEExcuseType) {
 };
 
 - (id)initWithType:(PEExcuseType)type;
-
-//- (void)click:(PELikeButton *)button;
 
 @end

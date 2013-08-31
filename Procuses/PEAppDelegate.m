@@ -36,7 +36,11 @@
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
+
             // Results were successfully found, looking first on the network and then on disk.
+            if (objects != nil || [objects count] != 0)
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"ExcusesDownloaded" object:self];
+
             NSArray *excusesArray = objects;
             self.designerExcuses = [[NSMutableArray alloc] init];
             self.developerExcuses = [[NSMutableArray alloc] init];
@@ -56,8 +60,7 @@
             
             // The network was inaccessible and we have no cached data for this query.
             NSLog(@"Error: %@ %@", error, [error userInfo]);
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Network Connection" message:@"A network connection is required to download the excuses" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-            [alert show];
+            
         }
     }];
 }
