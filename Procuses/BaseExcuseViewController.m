@@ -18,6 +18,8 @@
 
 @property (nonatomic, copy) NSString *navBarTitle;
 @property (nonatomic, copy) NSArray *excusesArray;
+@property (nonatomic, strong) UILabel *infoLabel;
+@property (nonatomic, strong) UILabel *emojiLabel;
 @property (nonatomic, strong) PELikeButton *likeButton;
 @property (nonatomic, strong) PEExcuseLabel *excuseLabel;
 
@@ -92,27 +94,27 @@
     if(![[NSUserDefaults standardUserDefaults] boolForKey:@"learntHowToGetNewExcuse"]) {
 
         NSString *infoTitle = @"Shake to get a New Excuse!";
-        UILabel *infoLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        [infoLabel setText:infoTitle];
-        [infoLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Light" size:18]];
-        [infoLabel setBackgroundColor:backgroundColor];
-        [infoLabel setTextAlignment:NSTextAlignmentCenter];
+        self.infoLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        [self.infoLabel setText:infoTitle];
+        [self.infoLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Light" size:18]];
+        [self.infoLabel setBackgroundColor:backgroundColor];
+        [self.infoLabel setTextAlignment:NSTextAlignmentCenter];
 
-        CGSize infoLabelSize = [infoTitle sizeWithFont:infoLabel.font];
-        [infoLabel setFrame:CGRectMake(30, screenHeight - 150, infoLabelSize.width, infoLabelSize.height)];
+        CGSize infoLabelSize = [infoTitle sizeWithFont:self.infoLabel.font];
+        [self.infoLabel setFrame:CGRectMake(30, screenHeight - 150, infoLabelSize.width, infoLabelSize.height)];
 
         NSString *emojiSmiley = @"\ue415";
-        UILabel *emojiLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        [emojiLabel setText:emojiSmiley];
-        [emojiLabel setFont:[UIFont fontWithName:@"AppleColorEmoji" size:18]];
-        [emojiLabel setBackgroundColor:backgroundColor];
-        [emojiLabel setTextAlignment:NSTextAlignmentCenter];
+        self.emojiLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        [self.emojiLabel setText:emojiSmiley];
+        [self.emojiLabel setFont:[UIFont fontWithName:@"AppleColorEmoji" size:18]];
+        [self.emojiLabel setBackgroundColor:backgroundColor];
+        [self.emojiLabel setTextAlignment:NSTextAlignmentCenter];
 
-        CGSize emojiLabelSize = [emojiSmiley sizeWithFont:emojiLabel.font];
-        [emojiLabel setFrame:CGRectMake(30 + infoLabelSize.width, screenHeight - 150, emojiLabelSize.width + 5, emojiLabelSize.height)];
+        CGSize emojiLabelSize = [emojiSmiley sizeWithFont:self.emojiLabel.font];
+        [self.emojiLabel setFrame:CGRectMake(30 + infoLabelSize.width, screenHeight - 150, emojiLabelSize.width + 5, emojiLabelSize.height)];
 
-        [self.view addSubview:infoLabel];
-        [self.view addSubview:emojiLabel];
+        [self.view addSubview:self.infoLabel];
+        [self.view addSubview:self.emojiLabel];
 
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"learntHowToGetNewExcuse"];
     }
@@ -151,6 +153,12 @@
 {
     NSString *excuseString = self.excusesArray[arc4random_uniform([self.excusesArray count])][@"excuse"];
     [self.excuseLabel updateLabel:excuseString];
+
+    if ([self.view.subviews containsObject:self.infoLabel]) {
+        NSLog(@"I was here");
+        [self.infoLabel removeFromSuperview];
+        [self.emojiLabel removeFromSuperview];
+    }
 }
 
 @end
