@@ -11,6 +11,7 @@
 #import "UIFont+FlatUI.h"
 #import "FUIAlertView.h"
 #import "UIColor+FlatUI.h"
+#import "SystemVersion.h"
 #import "UINavigationBar+FlatUI.h"
 #import "PERootViewController.h"
 #import "BaseExcuseViewController.h"
@@ -41,7 +42,7 @@ BOOL excusesDownloaded;
     self = [super init];
 
     if (self) {
-        legacyMode = YES;
+        legacyMode = NO;
         excusesDownloaded = NO;
     }
 
@@ -154,7 +155,7 @@ BOOL excusesDownloaded;
      *  When I know how about to decide if an app is to run in Legacy mode
      *  I Can easily switch the code out
      */
-    if ( legacyMode ) {
+    if (!SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
         [titleLabel setFrame:CGRectMake(48, screenHeight / 5 - 80, titleLabelSize.width, titleLabelSize.height)];
         [subtitleLabel setFrame:CGRectMake(48, (screenHeight / 5 + titleLabelSize.height) - 80 , subtitleLabelSize.width, subtitleLabelSize.height)];
         [aboutLabel setFrame:CGRectMake(48, screenHeight - 170 , subtitleLabelSize.width, 50)];
@@ -211,10 +212,12 @@ BOOL excusesDownloaded;
 
     } else {
 
+
         FUIAlertView *alertView = [[FUIAlertView alloc] initWithTitle:@"No Network Connection" message:@"A network connection is required to download the excuses" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
 
         alertView.titleLabel.textColor = [UIColor cloudsColor];
         alertView.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+
         alertView.messageLabel.textColor = [UIColor cloudsColor];
         alertView.messageLabel.font = [UIFont flatFontOfSize:14];
         alertView.backgroundOverlay.backgroundColor = [[UIColor cloudsColor] colorWithAlphaComponent:0.8];
@@ -225,7 +228,7 @@ BOOL excusesDownloaded;
         alertView.defaultButtonTitleColor = [UIColor asbestosColor];
         
         [alertView show];
-        
+
     }
 }
 

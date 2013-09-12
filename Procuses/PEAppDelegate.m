@@ -7,6 +7,7 @@
 //
 
 #import <Parse/Parse.h>
+#import "FUIAlertView.h"
 #import "PEAppDelegate.h"
 #import "PERootViewController.h"
 
@@ -60,7 +61,7 @@
             
             // The network was inaccessible and we have no cached data for this query.
             NSLog(@"Error: %@ %@", error, [error userInfo]);
-            
+
         }
     }];
 }
