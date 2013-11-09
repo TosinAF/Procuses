@@ -13,4 +13,4 @@ Procuses combines excuses from the following sites:
 
 Keep Calm & Use Procuses to Procrastinate! 
 
-Have questions, problems or feedback? Reach out to me on Twitter: @tosinaf
+Have questions, problems or feedback? Reach out to me on Twitter: [@tosinaf](twitter.com/tosinaf)

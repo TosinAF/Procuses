@@ -8,15 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class PERootViewController;
+@class PEExcuseViewController;
 
 @interface PEAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) PERootViewController *viewController;
-
-@property (nonatomic, retain) NSMutableArray *designerExcuses;
-@property (nonatomic, retain) NSMutableArray *developerExcuses;
-@property (nonatomic, retain) NSMutableArray *accountManagerExcuses;
+@property (strong, nonatomic) PEExcuseViewController *viewController;
 
 @end

@@ -16,6 +16,6 @@
 
 @interface PEExcuseLabel : UILabel
 
-- (void)updateLabel:(NSString *)excuse;
+- (void)setExcuse:(NSString *)excuse;
 
 @end

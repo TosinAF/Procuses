@@ -7,9 +7,8 @@
 //
 
 #import <Parse/Parse.h>
-#import "FUIAlertView.h"
 #import "PEAppDelegate.h"
-#import "PERootViewController.h"
+#import "PEExcuseViewController.h"
 
 #define ParseAppID @"xed9cfbQReafyFZb37jyUyuZNZ4scm5OxgH135zZ"
 #define ParseClientKey @"a4OQfAJ6L8CKfVV5yc9jB7VrxspzG9yjAFfXXhwY"
@@ -18,54 +17,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[PERootViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
-    self.window.rootViewController = navigationController;
-    [self.window makeKeyAndVisible];
-
     [Parse setApplicationId:ParseAppID clientKey:ParseClientKey];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    [self getExcusesFromParse];
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+    self.viewController = [[PEExcuseViewController alloc] init];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
 
     return YES;
 }
-
-- (void)getExcusesFromParse
-{
-    PFQuery *query = [PFQuery queryWithClassName:@"Excuses"];
-    query.cachePolicy = kPFCachePolicyNetworkElseCache;
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-
-            // Results were successfully found, looking first on the network and then on disk.
-            if (objects != nil || [objects count] != 0)
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"ExcusesDownloaded" object:self];
-
-            NSArray *excusesArray = objects;
-            self.designerExcuses = [[NSMutableArray alloc] init];
-            self.developerExcuses = [[NSMutableArray alloc] init];
-            self.accountManagerExcuses = [[NSMutableArray alloc] init];
-
-            for (PFObject *excuse in excusesArray) {
-                if ([excuse[@"excuseType"] isEqualToString:@"Designer"]) {
-                    [self.designerExcuses addObject:excuse];
-                } else if ([excuse[@"excuseType"] isEqualToString:@"Developer"]) {
-                    [self.developerExcuses addObject:excuse];
-                } else if ([excuse[@"excuseType"] isEqualToString:@"AccountManager"]) {
-                    [self.accountManagerExcuses addObject:excuse];
-                }
-            }
-
-        } else {
-            
-            // The network was inaccessible and we have no cached data for this query.
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-
-        }
-    }];
-}
-
 
 
 @end

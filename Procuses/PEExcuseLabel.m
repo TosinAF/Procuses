@@ -21,17 +21,16 @@
     return self;
 }
 
-- (void)updateLabel:(NSString *)excuse
+- (void)setExcuse:(NSString *)excuse
 {
     [self setText:excuse];
 
     // Get Expected Size of String & Adjust Size of Label to Fit
-
     CGSize maximumLabelSize = CGSizeMake(280,200);
     CGSize expectedLabelSize = [excuse sizeWithFont:self.font constrainedToSize:maximumLabelSize];
     CGRect newFrame = self.frame;
     newFrame.size.width = 280.0;
-    newFrame.size.height = expectedLabelSize.height;
+    newFrame.size.height = expectedLabelSize.height + 20;
     self.frame = newFrame;
 }
 
