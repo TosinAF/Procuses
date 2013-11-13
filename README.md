@@ -17,6 +17,6 @@ Procuses combines excuses from the following sites:
 Keep Calm & Use Procuses to Procrastinate!<br/>
 
 Version 2.0 comes with a new icon, improved flat design & a new navigation process.<br/>
-Icon Design By @MegDraws!
+Icon Design By [@MegDraws](https://twitter.com/MegDraws)
 
-Have questions, problems or feedback? Reach out to me on Twitter: [@tosinaf](twitter.com/tosinaf)
+Have questions, problems or feedback? Reach out to me on Twitter: [@tosinaf](https://twitter.com/tosinaf)
