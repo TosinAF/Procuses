@@ -10,13 +10,13 @@ Procuses aka Professional Excuses is a humour app that allows you the profession
 
 Procuses combines excuses from the following sites: 
 
-• designerExcuses.com 
-• developerExcuses.com 
-• accountMaangerExcuses.com 
+• designerExcuses.com<br/>
+• developerExcuses.com<br/>
+• accountMaangerExcuses.com<br/>
 
-Keep Calm & Use Procuses to Procrastinate! 
+Keep Calm & Use Procuses to Procrastinate!<br/>
 
-Version 2.0 comes with a new icon, improved flat design & a new navigation process.
+Version 2.0 comes with a new icon, improved flat design & a new navigation process.<br/>
 Icon Design By @MegDraws!
 
 Have questions, problems or feedback? Reach out to me on Twitter: [@tosinaf](twitter.com/tosinaf)
