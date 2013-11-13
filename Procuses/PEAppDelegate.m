@@ -23,8 +23,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
-    self.viewController = [[PEExcuseViewController alloc] init];
-    self.window.rootViewController = self.viewController;
+    PEExcuseViewController *viewController = [[PEExcuseViewController alloc] init];
+    self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
 
     return YES;

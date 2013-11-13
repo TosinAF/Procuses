@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Tosin Afolabi. All rights reserved.
 //
 
+#define IOS_NEWER_OR_EQUAL_TO_7 ( [ [ [ UIDevice currentDevice ] systemVersion ] floatValue ] >= 7.0 )
+
 #import "PEExcuseLabel.h"
 
 @implementation PEExcuseLabel
@@ -27,11 +29,29 @@
 
     // Get Expected Size of String & Adjust Size of Label to Fit
     CGSize maximumLabelSize = CGSizeMake(280,200);
-    CGSize expectedLabelSize = [excuse sizeWithFont:self.font constrainedToSize:maximumLabelSize];
+    CGSize expectedLabelSize = [self text:excuse sizeWithFont:self.font constrainedToSize:maximumLabelSize];
     CGRect newFrame = self.frame;
     newFrame.size.width = 280.0;
     newFrame.size.height = expectedLabelSize.height + 20;
     self.frame = newFrame;
+}
+
+- (CGSize)text:(NSString*)text sizeWithFont:(UIFont*)font constrainedToSize:(CGSize)size
+{
+    if(IOS_NEWER_OR_EQUAL_TO_7){
+        NSDictionary *attributesDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                              font, NSFontAttributeName,
+                                              nil];
+
+        CGRect frame = [text boundingRectWithSize:size
+                                          options:(NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading)
+                                       attributes:attributesDictionary
+                                          context:nil];
+
+        return frame.size;
+    }else{
+        return [text sizeWithFont:font constrainedToSize:size];
+    }
 }
 
 @end

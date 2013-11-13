@@ -13,6 +13,5 @@
 @interface PEAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) PEExcuseViewController *viewController;
 
 @end

@@ -14,15 +14,14 @@
 @interface PEExcuseViewController ()
 
 @property (nonatomic, strong) UILabel *infoLabel;
-@property (nonatomic, strong) PEExcuseLabel *excuseLabel;
 @property (nonatomic, strong) UIButton *menuButton;
+@property (nonatomic, strong) PEExcuseLabel *excuseLabel;
 @property (nonatomic, strong) PEMenuViewController *menuViewController;
 
 @property (nonatomic, strong) NSArray *excusesArray;
 @property (nonatomic, strong) NSMutableArray *designerExcuses;
 @property (nonatomic, strong) NSMutableArray *developerExcuses;
 @property (nonatomic, strong) NSMutableArray *accountManagerExcuses;
-
 
 @end
 
@@ -31,8 +30,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self getExcusesFromParse];
-    [self.view setBackgroundColor:[UIColor colorWithRed:0.616 green:0.855 blue:0.620 alpha:1]];
 
     // Excuse Label
 
@@ -55,7 +52,8 @@
     [[self.menuButton layer] setBorderWidth:3];
     [[self.menuButton layer] setBorderColor:[UIColor whiteColor].CGColor];
 
-    [self getExcuse];
+    [self getExcusesFromParse];
+    [self updateExcuseLabel];
 
     self.infoLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     if(![[NSUserDefaults standardUserDefaults] boolForKey:@"infoLabelShown"]) {
@@ -71,15 +69,23 @@
 
     // Position Changes for 3.5 inch Devices
     if (self.view.bounds.size.height == 568) {
+
         [self.menuButton setFrame:CGRectMake(110, 420, 100, 50)];
         [self.infoLabel setFrame:CGRectMake(0, 490, self.view.bounds.size.width, 40)];
+
     } else {
+        
         [self.menuButton setFrame:CGRectMake(110, 370, 100, 50)];
         [self.infoLabel setFrame:CGRectMake(0, 430, self.view.bounds.size.width, 40)];
     }
 
     [self.view addSubview:self.excuseLabel];
     [self.view addSubview:self.menuButton];
+}
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -92,30 +98,22 @@
     [self resignFirstResponder];
 }
 
-- (BOOL)canBecomeFirstResponder
-{
-    return YES;
-}
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (motion == UIEventSubtypeMotionShake)
     {
-        [self getExcuse];
+        [self updateExcuseLabel];
     }
 }
 
 - (void)menuViewController:(PEMenuViewController *)viewController didChooseExcuseType:(int)excuseType
 {
     [self setExcuseType:excuseType];
-    [self getExcuse];
+    [self updateExcuseLabel];
 }
 
 - (void)menuButtonPressed:(id)selector
 {
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:10.7];
-    [UIView commitAnimations];
-
     self.menuViewController = [[PEMenuViewController alloc] init];
     [self.menuViewController setDelegate:self];
 
@@ -168,31 +166,39 @@
 
 }
 
-- (void)getExcuse
+- (void)updateExcuseLabel
 {
     NSString *excuseString = self.excusesArray[arc4random_uniform([self.excusesArray count])][@"excuse"];
     [self.excuseLabel setExcuse:excuseString];
 
     if ([self.view.subviews containsObject:self.infoLabel]) {
-        //[self.infoLabel removeFromSuperview];
+        [self.infoLabel removeFromSuperview];
     }
 }
 
 - (void)setExcuseType:(PEExcuseType)excuseType
 {
+    UIColor *backgroundColor;
+
     switch (excuseType) {
         case PEExcuseTypeAccountManger:
             self.excusesArray = self.accountManagerExcuses;
+            backgroundColor = [UIColor colorWithRed:0.616 green:0.855 blue:0.620 alpha:1];
             break;
 
         case PEExcuseTypeDeveloper:
             self.excusesArray = self.developerExcuses;
+            backgroundColor = [UIColor colorWithRed:0.294 green:0.780 blue:0.898 alpha:1];
             break;
 
         case PEExcuseTypeDesigner:
             self.excusesArray = self.designerExcuses;
+            backgroundColor = [UIColor colorWithRed:0.800 green:0.800 blue:1.000 alpha:1];
             break;
     }
+
+    [self.view setBackgroundColor:backgroundColor];
+    [self.menuButton setTitleColor:backgroundColor forState:UIControlStateHighlighted];
 }
 
 - (UIImage *)imageWithColor:(UIColor *)color {

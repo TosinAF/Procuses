@@ -25,11 +25,6 @@
 		4E26FAD517BC075E00CF2965 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FACD17BC075E00CF2965 /* SystemConfiguration.framework */; };
 		4E63DE8017BDCF4600D11C4D /* PEExcuseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E63DE7F17BDCF4600D11C4D /* PEExcuseLabel.m */; };
 		4E63DE8517BDD04400D11C4D /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E63DE8417BDD04400D11C4D /* Entypo.ttf */; };
-		4E722A2317CEC6CF0073CC53 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E722A1517CEC0760073CC53 /* Default.png */; };
-		4E722A2417CEC6D30073CC53 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E722A1717CEC0810073CC53 /* Default@2x.png */; };
-		4E722A2517CEC6E50073CC53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E722A1917CEC1100073CC53 /* Default-568h@2x.png */; };
-		4E722A2717CEC7000073CC53 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E722A2617CEC7000073CC53 /* iPhone.png */; };
-		4E722A2917CEC7090073CC53 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E722A2817CEC7090073CC53 /* iPhone@2x.png */; };
 		4E8395FC182DB93C0065B570 /* PEMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8395FB182DB93C0065B570 /* PEMenuViewController.m */; };
 		4E839642182DDEE40065B570 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E83963E182DDEE40065B570 /* JosefinSans-Bold.ttf */; };
 		4E839643182DDEE40065B570 /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E83963F182DDEE40065B570 /* JosefinSans-Light.ttf */; };
@@ -65,11 +60,6 @@
 		4E63DE7E17BDCF4600D11C4D /* PEExcuseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEExcuseLabel.h; sourceTree = "<group>"; };
 		4E63DE7F17BDCF4600D11C4D /* PEExcuseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEExcuseLabel.m; sourceTree = "<group>"; };
 		4E63DE8417BDD04400D11C4D /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = ../Entypo.ttf; sourceTree = "<group>"; };
-		4E722A1517CEC0760073CC53 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		4E722A1717CEC0810073CC53 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
-		4E722A1917CEC1100073CC53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		4E722A2617CEC7000073CC53 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhone.png; path = ../iPhone.png; sourceTree = "<group>"; };
-		4E722A2817CEC7090073CC53 /* iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone@2x.png"; path = "../iPhone@2x.png"; sourceTree = "<group>"; };
 		4E8395FA182DB93C0065B570 /* PEMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEMenuViewController.h; sourceTree = "<group>"; };
 		4E8395FB182DB93C0065B570 /* PEMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEMenuViewController.m; sourceTree = "<group>"; };
 		4E83963E182DDEE40065B570 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -166,11 +156,6 @@
 		4E20501317AEC877008C1E26 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4E722A2817CEC7090073CC53 /* iPhone@2x.png */,
-				4E722A2617CEC7000073CC53 /* iPhone.png */,
-				4E722A1917CEC1100073CC53 /* Default-568h@2x.png */,
-				4E722A1717CEC0810073CC53 /* Default@2x.png */,
-				4E722A1517CEC0760073CC53 /* Default.png */,
 				4E839646182DDEEB0065B570 /* Fonts */,
 				4E20501417AEC877008C1E26 /* Procuses-Info.plist */,
 				4E83964A182DF46B0065B570 /* LocalExcuses.plist */,
@@ -248,15 +233,10 @@
 				4E83964B182DF46B0065B570 /* LocalExcuses.plist in Resources */,
 				4E63DE8517BDD04400D11C4D /* Entypo.ttf in Resources */,
 				4E20501717AEC877008C1E26 /* InfoPlist.strings in Resources */,
-				4E722A2317CEC6CF0073CC53 /* Default.png in Resources */,
 				4E839643182DDEE40065B570 /* JosefinSans-Light.ttf in Resources */,
 				4E839644182DDEE40065B570 /* JosefinSans-Regular.ttf in Resources */,
-				4E722A2417CEC6D30073CC53 /* Default@2x.png in Resources */,
 				4E839642182DDEE40065B570 /* JosefinSans-Bold.ttf in Resources */,
 				4EC15A7717E1633D0072BC75 /* Images.xcassets in Resources */,
-				4E722A2517CEC6E50073CC53 /* Default-568h@2x.png in Resources */,
-				4E722A2717CEC7000073CC53 /* iPhone.png in Resources */,
-				4E722A2917CEC7090073CC53 /* iPhone@2x.png in Resources */,
 				4E839645182DDEE40065B570 /* JosefinSans-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,13 +339,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Procuses/Procuses-Prefix.pch";
 				INFOPLIST_FILE = "Procuses/Procuses-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -383,13 +364,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Procuses/Procuses-Prefix.pch";
 				INFOPLIST_FILE = "Procuses/Procuses-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
