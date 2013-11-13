@@ -24,7 +24,6 @@
 		4E26FAD417BC075E00CF2965 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FACC17BC075E00CF2965 /* StoreKit.framework */; };
 		4E26FAD517BC075E00CF2965 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E26FACD17BC075E00CF2965 /* SystemConfiguration.framework */; };
 		4E63DE8017BDCF4600D11C4D /* PEExcuseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E63DE7F17BDCF4600D11C4D /* PEExcuseLabel.m */; };
-		4E63DE8517BDD04400D11C4D /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E63DE8417BDD04400D11C4D /* Entypo.ttf */; };
 		4E8395FC182DB93C0065B570 /* PEMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8395FB182DB93C0065B570 /* PEMenuViewController.m */; };
 		4E839642182DDEE40065B570 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E83963E182DDEE40065B570 /* JosefinSans-Bold.ttf */; };
 		4E839643182DDEE40065B570 /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E83963F182DDEE40065B570 /* JosefinSans-Light.ttf */; };
@@ -59,7 +58,6 @@
 		4E26FACD17BC075E00CF2965 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4E63DE7E17BDCF4600D11C4D /* PEExcuseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEExcuseLabel.h; sourceTree = "<group>"; };
 		4E63DE7F17BDCF4600D11C4D /* PEExcuseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEExcuseLabel.m; sourceTree = "<group>"; };
-		4E63DE8417BDD04400D11C4D /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = ../Entypo.ttf; sourceTree = "<group>"; };
 		4E8395FA182DB93C0065B570 /* PEMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEMenuViewController.h; sourceTree = "<group>"; };
 		4E8395FB182DB93C0065B570 /* PEMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEMenuViewController.m; sourceTree = "<group>"; };
 		4E83963E182DDEE40065B570 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 				4E83963F182DDEE40065B570 /* JosefinSans-Light.ttf */,
 				4E839640182DDEE40065B570 /* JosefinSans-Regular.ttf */,
 				4E839641182DDEE40065B570 /* JosefinSans-SemiBold.ttf */,
-				4E63DE8417BDD04400D11C4D /* Entypo.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -231,7 +228,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E83964B182DF46B0065B570 /* LocalExcuses.plist in Resources */,
-				4E63DE8517BDD04400D11C4D /* Entypo.ttf in Resources */,
 				4E20501717AEC877008C1E26 /* InfoPlist.strings in Resources */,
 				4E839643182DDEE40065B570 /* JosefinSans-Light.ttf in Resources */,
 				4E839644182DDEE40065B570 /* JosefinSans-Regular.ttf in Resources */,
