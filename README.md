@@ -20,3 +20,6 @@ Version 2.0 comes with a new icon, improved flat design & a new navigation proce
 Icon Design By [@MegDraws](https://twitter.com/MegDraws)
 
 Have questions, problems or feedback? Reach out to me on Twitter: [@tosinaf](https://twitter.com/tosinaf)
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/TosinAF/procuses/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
