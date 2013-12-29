@@ -1,0 +1,256 @@
+/* --- Local Fonts --- */
+
+@font-face {
+	font-family: Entypo;
+	src: url(fonts/entypo.woff);
+}
+
+/* --- Layout --- */
+
+body, html, #content {
+  height: 768px;
+}
+
+body {
+	margin: 0 auto;
+	
+	color: #FFF;
+	font-family: 'Josefin Sans', sans-serif;
+	
+	/* Appearance */
+	background-image: linear-gradient(bottom, #FFF 50%, #2C3E50 50%);
+	background-image: -o-linear-gradient(bottom, #FFF 50%, #2C3E50 50%);
+	background-image: -moz-linear-gradient(bottom, #FFF 50%, #2C3E50 50%);
+	background-image: -webkit-linear-gradient(bottom, #FFF 50%, #2C3E50 50%);
+	background-image: -ms-linear-gradient(bottom, #FFF 50%, #2C3E50 50%);
+}
+
+#content {
+	width: 1000px;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow-x:hidden;
+}
+
+#left {
+	width: 500px;
+	float:left;
+	position: relative;
+	padding-right: 20px;
+}
+
+#right {
+	margin-left: 500px;
+	position: relative;
+}
+
+#app-image, #app-image-caption {
+	position: absolute;
+}
+
+#app-image {
+	top: 50px;
+	right: 0px;
+	padding: 10px;
+}
+
+#app-image-caption {
+	top: 640px;
+	right: 5px;
+	display:inline;
+	
+	color: #1A76B9;
+	padding: 5px;
+	
+	width: 280px;
+	font-size: 15px;
+	font-family: 'Varela Round', sans-serif;
+	text-align: center;
+}
+
+	#app-image-caption a {
+		color: #E96151;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+.heart {
+	color: #E96151;
+	font-family: Entypo, sans-serif;
+	font-size: 30px;
+}
+
+#app-title, #app-categories {
+	position: absolute;
+}
+
+#app-title {
+	top: 200px;
+	left: 130px;
+	color: #FFF;
+	font-size: 125px;
+	font-weight: 400;
+}
+
+#app-categories {
+	top: 300px;
+	left: 125px;
+	width: 600px;
+	padding-top: 5px;
+}
+
+li {
+	float: left;
+	padding: 10px;
+	list-style:none;
+	font-size: 22px;
+}
+
+	li:nth-child(n+2) {
+		padding-left: 30px;
+	}
+
+	li:first-child {
+		padding-right: 4px;
+	}
+
+.category-seperator {
+	top: 3px;
+	display: inline-block;
+	position:absolute;
+	font-size: 50px;
+	color: #9B9B9B;
+ }
+
+#app-description, #app-demo-desc, #action-buttons {
+	position: absolute;
+}
+
+.desc {
+	width: 680px;
+	color: #E76255;
+	padding: 10px;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 20px;
+}
+
+#app-description {
+	top: 420px;
+	line-height: 25px;
+	text-align: justify;
+}
+
+#app-demo-desc {
+	top: 510px;
+	font-size: 17px;
+	text-align: center;
+}
+
+#action-buttons {
+	top: 560px;
+	width: 800px;
+}
+
+.btn {
+	
+	/* --- Layout --- */
+	
+	display: block;
+	width: 200px;
+	margin: 0 60px;
+	float: left;
+	
+	/* --- Appearance --- */
+	color: #FFF;
+	padding: 15px 10px;
+	
+	/* --- Typography --- */
+	
+	font-weight:600;
+	text-align:center;
+	text-decoration:none;
+}
+
+.submit-excuse {
+	background-image: -o-linear-gradient(-90deg, #475062 0%, #343E4F 100%);
+	background-image: -moz-linear-gradient(-90deg, #475062 0%, #343E4F 100%);
+	background-image: -webkit-linear-gradient(-90deg, #475062 0%, #343E4F 100%);
+	background-image: -ms-linear-gradient(-90deg, #475062 0%, #343E4F 100%);
+	background-image: linear-gradient(-180deg, #475062 0%, #343E4F 100%);
+}
+
+.download {
+	background-image: -o-linear-gradient(-90deg, #DF5F51 0%, #C74B3F 100%);
+	background-image: -moz-linear-gradient(-90deg, #DF5F51 0%, #C74B3F 100%);
+	background-image: -webkit-linear-gradient(-90deg, #DF5F51 0%, #C74B3F 100%);
+	background-image: -ms-linear-gradient(-90deg, #DF5F51 0%, #C74B3F 100%);
+	background-image: linear-gradient(-180deg, #DF5F51 0%, #C74B3F 100%);
+}
+
+#button-seperator {
+	display:inline;
+	position:absolute;
+	bottom: 10px;
+	margin-left: -10px;
+	color: #000;
+	font-size: 30px;
+}
+
+#form-wrapper {
+	clear: both;
+	overflow: auto;
+	background: #E96151;
+	padding-bottom: 15px;
+	font-family: 'Varela Round', sans-serif;
+}
+
+#submit-excuse-form {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#form-title {
+	color: white;
+	padding: 30px;
+	font-size: 40px;
+	text-align: center;
+}
+
+textarea {
+	width: 955px;
+	margin: 20px;
+	
+	resize:none;
+	outline:none;
+	overflow:auto;
+	border-radius: 7px;
+	background: #FAEDCB;
+	border-color: #FAEDCB;
+	font-size: 35px;
+	font-family: 'Varela Round', sans-serif;
+}
+
+	textarea:focus {
+		background: #FFFFFF;
+		border-color: #FFFFFF;
+	}
+
+#input-name {
+	height: 45px;
+}
+
+#input-excuse {
+	height: 300px;
+}
+
+#form-btn {	
+	width: 150px;
+	border: none;
+	padding: 12px;
+	margin-right: 17px;
+	float: right;
+	color: white;
+	
+	font-size: 15px;
+	font-weight: 600;
+	font-family: 'Josefin Sans', sans-serif;
