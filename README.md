@@ -6,6 +6,8 @@ Procuses V2.0
 <img src="https://raw.github.com/TosinAF/Procuses/master/Screenshots/DeveloperView.png" height="25%" width="25%" />
 <img src="https://raw.github.com/TosinAF/Procuses/master/Screenshots/DesignerView.png" height="25%" width="25%" />
 
+<b>UPDATE!!! Procuses finnally has it's own [website!](http://tosinaf.github.io/Procuses)</b>
+
 Procuses aka Professional Excuses is a humour app that allows you the professional find the right excuse to use in order to procrastinate adding that new feature/requirement at a moments notice. 
 
 Procuses combines excuses from the following sites: 
